@@ -4,7 +4,7 @@ until game:IsLoaded()
 
 local library
 do
-    local folder = "CannonCFG"
+    local folder = "Ghost.cc v2"
     local services = setmetatable({}, {
         __index = function(_, service)
             if service == "InputService" then
@@ -4147,7 +4147,7 @@ local NotificationHolder = loadstring(game:HttpGet("https://raw.githubuserconten
 local Notification = loadstring(game:HttpGet("https://raw.githubusercontent.com/BocusLuke/UI/main/STX/Client.Lua"))()
 function SendNotification(text)
     Notification:Notify(
-        {Title = "FrostByte", Description = "coolest kid - "..text},
+        {Title = "Ghost.cc", Description = "coolest kid - "..text},
         {OutlineColor = Color3.fromRGB(0,0,139),Time = 3, Type = "image"},
         {Image = "http://www.roblox.com/asset/?id=6023426923", ImageColor = Color3.fromRGB(0,0,139)}
     )
@@ -4802,7 +4802,7 @@ straight.Hooks[1] = hookmetamethod(game, "__index", newcclosure(function(self, k
 end))
 
 local ScriptProperties = {
-    ScriptName = "Cannon [BETA]",
+    ScriptName = "Ghost.cc",
     ScriptSizeOne = 700,
     ScriptSizeTwo = 500,
     ScriptAccent = Color3.fromRGB(128,0,128),
@@ -4835,7 +4835,7 @@ TextButton.BackgroundColor3 = Color3.fromRGB(0,0,139)
 TextButton.BackgroundTransparency = 1.000
 TextButton.Size = UDim2.new(1, 0, 1, 0)
 TextButton.Font = Enum.Font.SourceSans
-TextButton.Text = "frostbyte"
+TextButton.Text = "Ghost.cc"
 TextButton.TextColor3 = Color3.fromRGB(0, 0, 0)
 TextButton.TextScaled = true
 TextButton.TextSize = 30
@@ -6630,10 +6630,10 @@ task.spawn(function()
         frames = frames + 1
     end)
 
-    watermark:Update { "FrostByte", ScriptProperties.UserPanel.Status, frames .. " FPS", string.format("%s:%s %s", tonumber(os.date("%I")), os.date("%M"), os.date("%p")) }
+    watermark:Update { "Ghost.cc", ScriptProperties.UserPanel.Status, frames .. " FPS", string.format("%s:%s %s", tonumber(os.date("%I")), os.date("%M"), os.date("%p")) }
 
     while task.wait(1) do
-        watermark:Update { "FrostByte", ScriptProperties.UserPanel.Status, frames .. " FPS", string.format("%s:%s %s", tonumber(os.date("%I")), os.date("%M"), os.date("%p")) }
+        watermark:Update { "Ghost.cc", ScriptProperties.UserPanel.Status, frames .. " FPS", string.format("%s:%s %s", tonumber(os.date("%I")), os.date("%M"), os.date("%p")) }
         frames = 0
     end
 end)
@@ -6728,7 +6728,7 @@ end
     if TrashTalk then
 		wait(NiggaDelay)
 		game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(
-		"FROSTBYTE IS GOATED",
+		"GHOST.CC IS GOATED",
 		"RAHHHH"
 		)
 		wait(NiggaDelay)
